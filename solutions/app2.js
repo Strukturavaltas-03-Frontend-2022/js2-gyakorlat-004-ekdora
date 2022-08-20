@@ -17,7 +17,7 @@ const weeksTillNow = Math.floor((daysTillNow - remainingFirstWeekDays) / 7); // 
 const remainingLastWeekDays = (daysTillNow - remainingFirstWeekDays) - weeksTillNow * 7; //3
 
 const countOfWorkingDays = () => 
-	remainingFirstWeekWorkDays + weeksTillNow * 5 + (remainingLastWeekDays > 4 ? 5 : remainingLastWeekDays % 5); // 173
+	remainingFirstWeekWorkDays + weeksTillNow * 5 + (remainingLastWeekDays > 4 ? 5 : remainingLastWeekDays); // 173
 
 console.log(countOfWorkingDays());
 
